@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Nhap nma can kiem tra</p>
+<input type="text" name="txtname" id="txtname">
+<input type="button" value="kiem tra" onclick="kienTraNamNhuan()">
+
+<script language ="javascript">
+    function kienTraNamNhuan(){
+        if(nam % 100 == 0){
+            if(nam % 400){
+                alert('Nam'+ nam + 'la nam nhuan')
+            }else{
+            alert('Nam'+ nam + 'khong phai nam nhuan')
+            }
+        
+    }else if(nam % 4 ==0){
+        alert('Nam' + nam +'la nam nhuan')
+    }else{
+        alert('Nam' + nam +'khong phai nam nhuan nam nhuan')
+    }
+}
+</script>
+
+
+
+ 
+
+</body>
+</html>

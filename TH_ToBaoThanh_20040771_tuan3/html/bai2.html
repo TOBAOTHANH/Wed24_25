@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0 auto;
+            box-sizing: border-box;
+        }
+        body{
+            width: 960px;
+            border: 1px solid black rgb(6, 6, 14);
+            color: gray;
+        }
+        header{
+            height: 100px;
+            background-color: #294e79;
+            position: relative;
+            color: white;
+        }
+        header img{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+        header h1{
+            position: absolute;
+            top:20px;
+            left:80px;
+        }
+        header p{
+            position: absolute;
+            bottom: 20px;
+            left: 80px;
+        }
+        header form{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .menu-parent{
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            display: flex;
+            list-style: none;
+        }
+        .menu-parent a{
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+            background-color: #3d73b1;
+            margin-left: 10px;
+        }
+        .menu-parent a:hover{
+            color: white ;
+            background-color: violet;
+        }
+        .menu-child{
+            display: none;
+            
+        }
+        .menu-parent li:hover .menu-child{
+            display: block;
+            position: absolute;
+            margin-left: -40px;
+        }
+        header input{
+            background-color: white;
+            color: black;
+           height: 25px;
+        }
+        header button{
+            background-color: #146cd8;
+            border-radius: 50px ;
+            padding: 5px;
+            color: white;
+        }
+        header input:: ::-webkit-input-placeholder,
+        header button{
+            color: white;
+            
+        }
+       
+        
+        section{
+            width: 70%;
+            float: left;
+            padding: 40px 40px 20px 10px;
+            background-color: antiquewhite;
+        }
+        section form {
+            width: 60%;
+            float: left;
+            padding-right: 40px;
+        }
+        section input{
+            width: 160px;
+            background-color: #f7f7f7;
+            padding-right: 1px solid gray;
+        }
+        section textarea{
+            background-color: #f7f7f7;
+            border: 1px solid gray;
+        }
+        section form p:first-child{
+            color: red;
+            text-shadow: 4px 4px 5px green ;
+        }
+        .section-right{
+            width: 40%;
+            float: right;
+        }
+        .form-col{
+            width: 50%;
+            float: left;
+        }
+        .form-row{
+            clear: both;
+            line-height: 30px;
+        }
+       
+        
+        footer{
+            clear: both;
+            background-color: #294e79;
+            padding: 5px;
+            height: 50px;
+        }
+        aside{
+            width: 28%;
+            float: right;
+            margin: 30px 1%;
+            background-color:antiquewhite;
+            padding: 20px;
+            
+        }
+        aside img{
+            width: 230px;
+            margin-top: 20px;
+            border: 1px solid gray;
+            padding: 3px;
+        }
+        p{
+            margin-top: 10px;
+            text-align: justify;
+        }
+        aside p:last-child{
+            font-weight: bold;
+            float: right;
+        }
+        h3{
+            border-bottom: 1px dashed gray;
+            line-height: 40px;
+        }
+        footer{
+            clear: both;
+            background-color: #294e79;
+            padding: 5px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/img/Capture.PNG" alt="">
+        <h1>FlowerBox 360</h1>
+        <p>...to get your daily dose of luxury roses!</p>
+        <form action="">
+            <input type="search" id="txtSearch" placeholder="Nhap..."size="30">
+            <button>Go</button>
+        </form>
+        <ul class="menu-parent">
+            <li><a href="">Home</a></li>
+            <li><a href="">Promotion</a></li>
+            <li><a href="">Gift-Baskets</a></li>
+            <li><a href="">Flower Services</a>
+                <ul class="menu-child">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Promotion</a></li>
+                    <li><a href="">Gift-Baskets</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+        </ul>
+    </header>
+    <section>
+        <h3>Why Not Contact Us Today!</h3>
+        <div id="sectoin1">
+            
+            <p><i>For Flower 360 Shoppers, that means not only can you send your friends and loved ones
+                the highest quality flowers found on online, but that you can do so at a great value.
+            </i></p>
+            <div class="form-row">
+                <div class="form-col">
+                        <label for="txtName">Name: </label><br>
+                        <input type="text" id="txtName">
+                </div>
+                <div class="form-col">
+                    <label for="txtEmail">Mail: </label><br>
+                    <input type="email" id="txtEmail">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="txtName">Telephone: </label><br>
+                    <input type="text" id="txtName">
+                </div>
+                <div class="form-col">
+                    <label for="txtEmail">Name: </label><br>
+                    <input type="email" id="txtEmail">
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="txtMessage">Message: </label><br>
+                <textarea id="txtMessage" cols="40" rows="5"></textarea>
+            </div>
+            <div class="form-row">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+
+            
+            
+        </div>
+        <div id="section2">
+            <h3>FlowerBox 360 Info!</h3>
+            <p>Operating Hours:<br>Monday-Friday: 9.00am-5.00pm.<br>Saturday: 9.00am-1.00pm<br>Sunday: Closed (No Deliveries)<br>ORDER ONLINE 24/7<br><br><br>
+            </p>
+            <p>Software Engineering Dept.<br>Information Technology Falcuty<br>Fisrt Floor,H-Building<br><br>
+            </p>
+            <p>
+                12 Nguyen Van Bao St., Ward 4<br> Go Vay District<br> Ho Chi Minh City<br> Tel:0283 8940 390<br>Fax:0283.9940 954
+            </p>
+        </div>
+        </div>
+        
+    </section>
+    <aside>
+        <h3>Discounts & Specials</h3>
+        <img src="../img/flower.jpg" alt="">
+        <p>FlowerBox 360 Offers many great discounts throughout the year, from coupons and coupon codes, to promo codes and other savings.
+            We also offer military flower discounts to our wonderfuls troops!
+        </p>
+        <br>
+        <p>Read more &#155;&#155;</p>
+    </aside>
+    <footer>
+        <p><span style="color: white;">Copyright &copy; 2022 - All Right Reserved - </span><span style="color: skyblue rgb(114,189,219);">
+            Sofware Engineering Department - Industrial University of Ho Chi Minh City
+        </span></p>
+    </footer>
+    
+      
+    
+</body>
+</html>
