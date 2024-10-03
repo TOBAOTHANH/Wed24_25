@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/background.jpg);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+#nav{
+    width: 10%;
+    display: flex;
+    margin: 120px 0;
+    float: left;
+}
+#nav ul li{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 7px 5px 10px;
+    list-style-type: none;
+}
+#nav ul li a{
+    text-decoration: none;
+    color: purple;
+}
+#header{
+    width: 60%;
+    background-color: green;
+    text-align: center;
+}
+#header h2{
+    letter-spacing: 20px;
+    font-style: italic;
+}
+#section{
+    width: 75%;
+    height: 550px;
+    padding-left: 5px;
+    float: left;
+}
+#section h3{
+    background-color: green;
+    width: 30%;
+}
+#aside img{
+    width: 15%;
+    padding: 10px;
+    float: left;
+}
+#footer{
+    width: 100%;
+    clear: both;
+}
