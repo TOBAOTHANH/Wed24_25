@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Đăng Nhập</title>
+    <script>
+        function nhap() {
+            
+            var tendn, mk;
+            tendn = document.getElementById("txtus").value;
+            mk = document.getElementById("txtmk").value;
+            var cafe = [];
+
+           
+            var taphop = document.querySelectorAll("input[type='checkbox']");
+            taphop.forEach(function (chk) {
+                if (chk.checked) {
+                    cafe.push(chk.value);
+                }
+            });
+
+           
+            var gtinh;
+            var taphopRadio = document.querySelectorAll("input[type='radio']");
+            taphopRadio.forEach(function (radio) {
+                if (radio.checked) {
+                    gtinh = radio.value;
+                }
+            });
+
+          
+            var w = window.open("infor.html");
+
+            localStorage.setItem('us', tendn); 
+            localStorage.setItem('pd', mk);    
+            localStorage.setItem('cd', cafe);  
+            localStorage.setItem('gt', gtinh); 
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            width: 786px;
+            height: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form>
+            
+            <input type="text" id="txtus" placeholder="Tên đăng nhập">
+            <br>
+            
+            <input type="password" id="txtmk" placeholder="Mật khẩu">
+            <br>
+            
+            <input type="radio" name="gt" value="Nam">Nam
+            <input type="radio" name="gt" value="Nu">Nữ
+            <br>
+
+            <input type="checkbox" value="Trung Nguyen">Trung Nguyên
+            <br>
+            <input type="checkbox" value="Mekong">MeKong
+            <br>
+            <input type="checkbox" value="New Blue">New Blue
+            <br>
+            <input type="checkbox" value="Tra Sua">Trà Sữa
+            <br>
+            
+            <input type="button" value="Nhập" onclick="nhap()">
+            <br>
+        </form>
+    </div>
+</body>
+</html>

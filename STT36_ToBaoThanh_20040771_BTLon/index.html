@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/animate/animate.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome/all.css">
+  <link rel="stylesheet" href="plugins/webfonts/font.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+  <title>Tuda Store</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <a style="margin-left: 160px;"  href="index.html">Hotline: 0935 19 1688 </a>
+  </div>
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/LOGO1.PNG" class="logo-top" alt="" style="width: 250px; height: 90px;">
+      </a>
+      <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">TRANG CHỦ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">BỘ SƯU TẬP</a>
+          </li>
+          <li class="nav-item lisanpham">
+            <a class="nav-link" href="detailproduct.html">SẢN PHẨM
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="sub_menu">
+              <li class="">
+                <a href="detailproduct.html" title=" Đá Phong Thuỷ"> 
+                  Đá Phong Thuỷ
+                </a>
+              </li>
+              <li class="">
+                <a href="detailproduct.html" title="Tượng đá Mỹ nghệ"> 
+                  Tượng đá Mỹ nghệ
+                </a>
+          
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+      <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="background: white;
+        width: 100%;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+          <h3 style="font-size: 14px;
+                    color: #272727;
+                    text-transform: uppercase;
+                    margin: 3px 0 30px 0;
+                    font-weight: 500; letter-spacing: 2px;">MENU</h3>
+            <div class="justify-content-md-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">BỘ SƯU TẬP</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle aaaa"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" >
+                    <p>SẢN PHẨM</p>
+                    <i class="fa fa-angle-double-right"></i>
+
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border:0;">
+                    <a class="dropdown-item" href="detailproduct.html" title="Đá Phong Thuỷ">Đá Phong Thuỷ</a>
+                    <a class="dropdown-item" href="detailproduct.html" title="Tượng đá Mỹ nghệ">Tượng đá Mỹ nghệ</a>
+                    
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+      </div>
+
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Tìm kiếm</h3>
+          <div class="search-box wpo-wrapper-search">
+            <form action="search" class="searchform searchform-categoris ultimate-search">
+              <div class="wpo-search-inner" style="display:inline">
+                <input type="hidden" name="type" value="product">
+                <input required="" id="inputSearchAuto" name="q" maxlength="40" autocomplete="off"
+                  class="searchinput input-search search-input" type="text" size="20"
+                  placeholder="Tìm kiếm sản phẩm...">
+              </div>
+              <button type="submit" class="btn-search btn" id="search-header-btn">
+                <i style="font-weight:bold" class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="offcanvas-flip2" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Giỏ hàng</h3>
+          <div class="site-nav-container-last" style="color:#272727">
+            <div class="cart-view clearfix">
+              <table id="cart-view">
+                <tbody>
+                  <tr class="item_1">
+                    <td class="img"><a href="" title=""><img
+                          src="images/Product/Tuongphongthuy/h1.jpg"></a></td>
+                    <td>
+                      <a class="pro-title-view" style="color: #272727" href=""
+                        title="">Bát Tụ Bảo bằng đá ngọc Hoàng Long</a>
+                      <span class="variant"></span>
+                      <span class="pro-quantity-view">1</span>
+                      <span class="pro-price-view">XL5,000₫</span>
+                      <span class="remove_link remove-cart"><a href=""><i style="color: #2e0020;"
+                            class="fas fa-denes"></i></a></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="line"></span>
+              <table class="table-total">
+                <tbody>
+                  <tr>
+                    <td class="text-left">TỔNG TIỀN:</td>
+                    <td class="text-right" id="total-view-cart">350,000₫</td>
+                  </tr>
+                  <tr>
+                    <td class="distance-td"><a href="" class="linktocart button dark">Xem giỏ hàng</a></td>
+                    <td><a href="" class="linktocheckout button dark">Thanh toán</a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a href="" target="_blank" class="button btn-check" style="text-decoration:none;"><span>Click nhận mã giảm
+                  giá ngay !</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icon-ol">
+        <a style="color: #272727" href="signin.html">
+          <i class="fas fa-user-alt"></i>
+        </a>
+        <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+          <i class="fas fa-search" style="color: black"></i>
+        </a>
+        
+        <a style="color: #272727" href="#" uk-toggle="target: #offcanvas-flip2">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Owl-Carousel -->
+  <div class="owl-carousel owl-theme owl-carousel-setting">
+    <div class="item"><img src="images/LOGO2.PNG" class="d-block w-100" alt="..."></div>
+    <div class="item"><img src="images/LOGO3.PNG" class="d-block w-100" alt="..."></div>
+</div>
+ 
+  <!--Content-->
+  <div class="content">
+    <div class="container">
+      <div class="hot_sp" style="padding-bottom: 10px;">
+        <h2 style="text-align:center;padding-top: 10px">
+          <a style="font-size: 28px;color: black;text-decoration: none" href="">Sản phẩm bán chạy</a>
+        </h2>
+        <div class="view-all" style="text-align:center;padding-top: -10px;">
+          <a style="color: black;text-decoration: none" href="">Xem thêm</a>
+        </div>
+      </div>
+    </div>
+    <!--Product-->
+    <div class="container" style="padding-bottom: 50px;">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="  Bát Tụ Bảo bằng đá ngọc Hoàng Long" class="img-resize">
+                <img src="images/Product/Tuongphongthuy/h1.jpg"
+                  alt="" class="lazyloaded">
+                <img src="images/Product/Tuongphongthuy/h1.jpg" alt=" Bát Tụ Bảo bằng đá ngọc Hoàng Long" class="lazyloaded">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                  font-size: 14px;text-decoration: none;" href="#"
+                  title="Bát Tụ Bảo bằng đá ngọc Hoàng Long" inspiration pack>
+                  Bát Tụ Bảo bằng đá ngọc Hoàng Long
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">255,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Bộ Thần Tài Thổ Địa bằng đá ngọc Hoàng Long" class="img-resize">
+                <img src="images/Product/Tuongphongthuy/h2.jpg" alt="Bộ Thần Tài Thổ Địa bằng đá ngọc Hoàng Long"
+                  class="lazyloaded">
+                <img src="images/Product/Tuongphongthuy/h2.jpg" alt="Bộ Thần Tài Thổ Địa bằng đá ngọc Hoàng Long" class="lazyloaded">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                  font-size: 14px;text-decoration: none;" title="Bộ Thần Tài Thổ Địa bằng đá ngọc Hoàng Long" href="">
+           Bộ Thần Tài Thổ Địa bằng đá ngọc Hoàng Long
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">225,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Tượng Thần Tài Thổ địa bằng đá tự nhiên" class="img-resize">
+                <img src="images/Product/Tuongphongthuy/h3.jpg"
+                  alt="Bộ thun bé trai cổ trụ túi BRAVO" class="lazyloaded">
+                <img src="images/Product/Tuongphongthuy/h3.jpg" alt="Tượng Thần Tài Thổ địa bằng đá tự nhiên" class="lazyloaded">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                            font-size: 14px;text-decoration: none;" href="#" title="Tượng Thần Tài Thổ địa bằng đá tự nhiên" inspiration
+                  pack>
+                  Tượng Thần Tài Thổ địa bằng đá tự nhiên
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">325,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Tượng Thần Tài Thổ Địa bằng đá trắngi" class="img-resize">
+                <img src="images/Product/Tuongphongthuy/h4.jpg" alt="Tượng Thần Tài Thổ Địa bằng đá trắng"
+                  class="lazyloaded">
+                <img src="images/Product/Tuongphongthuy/h4.jpg" alt="Tượng Thần Tài Thổ Địa bằng đá trắng" class="lazyloaded">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                       font-size: 14px;text-decoration: none;" href="#" title="Tượng Thần Tài Thổ Địa bằng đá trắng" inspiration pack>
+                  Tượng Thần Tài Thổ Địa bằng đá trắng
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">385,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Tượng Tỳ Hưu đá ngọc xanh Pakistan tự nhiên" class="img-resize">
+                <img class="lazyloaded" src="images/Product/Tuongphongthuy/h5.jpg"
+                  alt="Đầm tiệc 2 dây">
+                <img class="lazyloaded" src="images/Product/Tuongphongthuy/h5.jpg" alt="Tượng Tỳ Hưu đá ngọc xanh Pakistan tự nhiên">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                      font-size: 14px;text-decoration: none;" href="#" title="Tượng Tỳ Hưu đá ngọc xanh Pakistan tự nhiên" inspiration
+                  pack>
+                  Tượng Tỳ Hưu đá ngọc xanh Pakistan tự nhiên
+
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">425,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Tượng Phật Di Lặc vác cành đào bằng đá" class="img-resize">
+                <img class="lazyloaded" src="images/Product/Tuongphongthuy/h6.jpg"
+                  alt="Tượng Phật Di Lặc vác cành đào bằng đá">
+                <img class="lazyloaded" src="images/Product/Tuongphongthuy/h6.jpg" alt="Tượng Phật Di Lặc vác cành đào bằng đá">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                      font-size: 14px;text-decoration: none;" href="">
+                 Tượng Phật Di Lặc vác cành đào bằng đá
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">285,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Tượng Phật Quan Âm ngồi bằng Đá Cẩm Thạch Trắng" class="img-resize">
+                <img class="lazyloaded" src="images/Product/Tuongphongthuy/h7.jpg"
+                  alt="Tượng Phật Quan Âm ngồi bằng Đá Cẩm Thạch Trắng">
+                <img class="lazyloaded" src="images/Product/Tuongphongthuy/h7.jpg" alt="Tượng Phật Quan Âm ngồi bằng Đá Cẩm Thạch Trắng ">
+              </a>
+            
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                      font-size: 14px;text-decoration: none;" href="#" title="Tượng Phật Quan Âm ngồi bằng Đá Cẩm Thạch Trắng" inspiration pack>
+              Tượng Phật Quan Âm ngồi bằng Đá Cẩm Thạch Trắng
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">165,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title=" Tượng Phật Thích Ca nằm viên tịch bằng Đá Cẩm Thạch Trắng" class="img-resize">
+                <img class="lazyloaded" src="images/Product/Tuongphongthuy/h8.jpg"
+                  alt="">
+                <img class="lazyloaded" src="images/Product/Tuongphongthuy/h8.jpg" alt=" Tượng Phật Thích Ca nằm viên tịch bằng Đá Cẩm Thạch Trắng">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                       font-size: 14px;text-decoration: none;" href="#" title="Tượng Phật Thích Ca nằm viên tịch bằng Đá Cẩm Thạch Trắng" inspiration
+                  pack>
+                  Tượng Phật Thích Ca nằm viên tịch bằng Đá Cẩm Thạch Trắng
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">199,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+   
+      
+    <!--gallery-->
+    <section class="section section-gallery">
+      <div class="">
+        <div class="hot_sp" style="padding-top: 70px;padding-bottom: 50px;">
+          <h2 style="text-align:center;padding-top: 10px">
+            <a style="font-size: 28px;color: black;text-decoration: none" href="">Tuda Store</a>
+          </h2>
+        </div>
+        <div class="list-gallery clearfix">
+          <ul class="collection-gp">
+            <li>
+              <div class="gallery_item">
+                <img class="img-resize" src="images/Product/Tuongphongthuy/h1.jpg" alt="">
+              </div>
+            </li>
+            <li>
+              <div class="gallery_item">
+                <img class="img-resize" src="images/Product/Tuongphongthuy/h2.jpg" alt="">
+              </div>
+            </li>
+            <li>
+              <div class="gallery_item">
+                <img class="img-resize" src="images/Product/Tuongphongthuy/h3.jpg" alt="">
+              </div>
+            </li>
+            <li>
+              <div class="gallery_item">
+                <img class="img-resize" src="images/Product/Tuongphongthuy/h4.jpg" alt="">
+              </div>
+            </li>
+            <li>
+              <div class="gallery_item">
+                <img class="img-resize" src="images/Product/Tuongphongthuy/h5.jpg" alt="">
+              </div>
+            </li>
+            <li>
+              <div class="gallery_item">
+                <img class="img-resize" src="images/Product/Tuongphongthuy/h6.jpg" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer-col footer-block">
+                <h4 class="footer-title">
+                  Giới thiệu
+                </h4>
+                <div class="footer-content">
+                  <p>Cửa hàng bán Tượng đá Mỹ nghệ và Đá Phong Thuỷ TudaStone.com gồm có Xưởng điêu khắc và Cửa hàng bán các sản phẩm tượng đá mỹ nghệ và đá phong thuỷ uy tín, lâu năm được khách hàng tin tưởng và đánh giá cao, chúng tôi có giao hàng toàn quốc tận nơi và ra nước ngoài.
+
+ 
+
+                    Các sản phẩm Tượng đá Mỹ nghệ được điêu khắc từ đá tự nhiên và nguyên khối bởi các nghệ nhân của TudaStone.com trực tiếp tại Làng đá Mỹ nghệ Non Nước, quận Ngũ Hành Sơn, Tp.Đà Nẵng, một làng nghề lâu đời, nổi danh với những sản phẩm điêu khắc sinh động và đầy nghệ thuật. Tại đây, các nghệ nhân thổi hồn vào đá, chắc chắn sẽ tạo ra những sản phẩm làm hài lòng cả những Khách hàng khó tính nhất.
+                    
+                    .</p>
+                  <div class="logo-footer">
+                    <img src="images/logo-bct.png" alt="Bộ Công Thương">
+                  </div>
+                  <div class="social-list">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-google"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                    <a href="#" class="fab fa-skype"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer-col footer-link">
+                <h4 class="footer-title">
+                  HỖ TRỢ
+                </h4>
+                <div class="footer-content toggle-footer">
+                  <ul>
+                    <li class="item">
+                      <a href="#" title="Chăm sóc Khách Hàng">Chăm sóc Khách Hàng
+
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title=" Phương thức thanh toán">     Phương thức thanh toán</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Chính sách đổi trả">Hỗ trợ đổi hàng</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Chính sách bảo mật"></a>Chính sách bảo mật</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Chính sách bán sỉ">Chính sách bán sỉ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer-col footer-block">
+                <h4 class="footer-title">
+                  Thời trang trẻ em Sun&moon
+                </h4>
+                <div class="footer-content toggle-footer">
+                  <ul>
+                    <li><span>Địa chỉ:</span>32 Lê Lợi, Phường Bến Nghé, Quận 1, TP.Hồ Chí Minh</li>
+                    <li><span>Điện thoại:</span> 0989 606 357</li>
+                    <li><span>Fax:</span> 028 38279681</li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer-col footer-block">
+                <h4 class="footer-title">
+                  FANPAGE
+                </h4>
+                <div class="footer-content">
+                  <div id="fb-root">
+                    <div class="footer-static-content">
+                      <div class="fb-page" data-href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FTudaStone%2F"
+                        data-tabs="timeline" data-width="" data-height="215" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FTudaStone%2F"
+                          class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FTudaStone%2F">Tượng đá Mỹ nghệ và Đá Phong Thủy TudaStone.com </a>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer--copyright">
+        <div class="container">
+          <hr>
+          <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+            <p>Copyright © 2020-2022 TuDaStone.com <a href=#> Tuda Store</a>. <a target="_blank"
+                href="https://www.facebook.com/RykerBR"> Powered by Haravan</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+ 
+  <script src="plugins/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="plugins/bootstrap/popper.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/script.js"></script>
+  <script src="plugins/uikit/uikit.min.js"></script>
+  <script src="plugins/uikit/uikit-icons.min.js"></script>
+</body>
+
+</html>

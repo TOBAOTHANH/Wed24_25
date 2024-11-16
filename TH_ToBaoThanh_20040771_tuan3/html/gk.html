@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px auto;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 960px;
+            border: 1px solid red;
+        }
+        header{
+            width: 100%;
+        }
+        header form{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .menu-parent {
+            width: 80%;
+            right: 10px;
+            display: flex;
+            list-style-type: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../img/Capture.PNG" alt="">
+            <p>tobaothanh</p>
+            <form action="">
+                
+                <input type="tobaothanh">
+                <button>go</button>
+            </form>
+            <ul class="menu-parent">
+                <li><a href="#">to</a></li>
+                <li><a href="3">bao</a></li>
+                <li><a href="#">thanh</a></li>
+                <li><a href="#">nha</a>
+                <ul class="menu-child">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul></li>
+            </ul>
+        </header>
+    </div>
+</body>
+</html>

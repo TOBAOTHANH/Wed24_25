@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin đăng nhập</title>
+    <script>
+        
+        window.onload = function() {
+            var gt1 = localStorage.getItem("us");
+            var gt2 = localStorage.getItem("pd");
+            var gt3 = localStorage.getItem("cd");
+            var gt4 = localStorage.getItem("gt");
+
+            document.getElementById("us").innerHTML = gt1 || "N/A";
+            document.getElementById("pw").innerHTML = gt2 || "N/A";
+            document.getElementById("cf").innerHTML = gt3 || "N/A";
+            document.getElementById("gen").innerHTML = gt4 || "N/A";
+        };
+    </script>
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thông tin đăng nhập</h1>
+    <table>
+        <tr>
+            <th colspan="2">Thông tin đăng nhập</th>
+        </tr>
+        <tr>
+            <td>Tên đăng nhập</td>
+            <td id="us">AAAA</td>
+        </tr>
+        <tr>
+            <td>Mật khẩu</td>
+            <td id="pw">BBBB</td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td id="gen">Nam</td>
+        </tr>
+        <tr>
+            <td>Cà phê bạn bình chọn</td>
+            <td id="cf">ccccc</td>
+        </tr>
+    </table>
+</body>
+</html>
